@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="SaveButton" layoutX="490.0" layoutY="582.0" mnemonicParsing="false" onAction="#onClicked" text="Save" />
+      <Label layoutX="142.0" layoutY="39.0" prefHeight="40.0" prefWidth="312.0" text="The survey that is about you!" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="58.0" layoutY="120.0" prefHeight="28.0" prefWidth="160.0" text="What is your name?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <ListView fx:id="NameListView" layoutX="58.0" layoutY="174.0" prefHeight="120.0" prefWidth="160.0" />
+      <TextField alignment="CENTER" layoutX="218.0" layoutY="120.0" prefHeight="28.0" prefWidth="160.0" text="How old are you?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <ListView fx:id="AgeListView" layoutX="218.0" layoutY="174.0" prefHeight="120.0" prefWidth="160.0" />
+      <TextField alignment="CENTER" layoutX="58.0" layoutY="346.0" prefHeight="28.0" prefWidth="160.0" text="What is your favorite hobby?">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </TextField>
+      <ListView fx:id="HobbyListView" layoutX="58.0" layoutY="402.0" prefHeight="120.0" prefWidth="160.0" />
+      <TextField alignment="CENTER" layoutX="218.0" layoutY="346.0" prefHeight="28.0" prefWidth="160.0" text="What is your favorite subject?">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </TextField>
+      <ListView fx:id="SubjectListView" layoutX="218.0" layoutY="402.0" prefHeight="120.0" prefWidth="160.0" />
+      <ListView fx:id="FoodListView" layoutX="378.0" layoutY="402.0" prefHeight="120.0" prefWidth="160.0" />
+      <TextField alignment="CENTER" layoutX="378.0" layoutY="346.0" prefHeight="28.0" prefWidth="160.0" text="What is your favorite food?">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" layoutX="378.0" layoutY="120.0" prefHeight="28.0" prefWidth="160.0" text="What's your birth month?">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </TextField>
+      <ListView fx:id="MonthListView" layoutX="378.0" layoutY="174.0" prefHeight="120.0" prefWidth="160.0" />
+      <TextField fx:id="Month0" alignment="CENTER" layoutX="378.0" layoutY="146.0" onAction="#MonthTextFieldReady" prefHeight="28.0" prefWidth="160.0" promptText="Type Here">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Age0" alignment="CENTER" layoutX="218.0" layoutY="146.0" onAction="#AgeTextFieldReady" prefHeight="28.0" prefWidth="160.0" promptText="Type Here">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Name0" alignment="CENTER" layoutX="58.0" layoutY="146.0" onAction="#NameTextFieldReady" prefHeight="28.0" prefWidth="160.0" promptText="Type Here">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Food0" alignment="CENTER" layoutX="378.0" layoutY="374.0" onAction="#FoodTextFieldReady" prefHeight="28.0" prefWidth="160.0" promptText="Type Here">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Subject0" alignment="CENTER" layoutX="218.0" layoutY="374.0" onAction="#SubjectTextFieldReady" prefHeight="28.0" prefWidth="160.0" promptText="Type Here">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Hobby0" alignment="CENTER" layoutX="58.0" layoutY="374.0" onAction="#HobbyTextFieldReady" prefHeight="28.0" prefWidth="160.0" promptText="Type Here">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>
